@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clickable="false">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/i1"
+        android:src="@drawable/empty_dice"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/i2"
+        android:layout_alignStart="@+id/i2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/i2"
+        android:src="@drawable/empty_dice"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/i1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/point"
+        android:id="@+id/textView"
+        android:background="@color/textbackground"
+        android:textColor="@color/text"
+        android:layout_below="@+id/button"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toRightOf="@+id/button50"
+        android:layout_toEndOf="@+id/button50" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/textView3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/i2"
+        android:layout_toEndOf="@+id/i2"
+        android:background="@color/textbackground"
+        android:autoText="false"
+        android:layout_alignBottom="@+id/textView"
+        android:textSize="25dp"
+        android:singleLine="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:id="@+id/button"
+        android:onClick="clockwise"
+        android:layout_below="@+id/i2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/button_background"
+        android:textSize="@dimen/button_textsize" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffc400"
+        android:textSize="@dimen/button_textsize"
+        android:text="Quit"
+        android:onClick="showAlert"
+        android:id="@+id/buttonX"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button100"
+        android:layout_alignEnd="@+id/button100"
+        android:layout_alignLeft="@+id/button100"
+        android:layout_alignStart="@+id/button100" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:background="@color/textbackground"
+        android:autoText="false"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:textColor="@color/text" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bet Amount $"
+        android:id="@+id/textView8"
+        android:textColor="@color/text"
+        android:background="@color/textbackground"
+            android:layout_below="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/button_background"
+        android:textSize="@dimen/button_textsize"
+        android:text="Bet$50"
+        android:id="@+id/button50"
+        android:layout_above="@+id/buttonX"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bet$100"
+        android:id="@+id/button100"
+        android:background="@color/button_background"
+        android:textSize="@dimen/button_textsize"
+        android:layout_alignTop="@+id/button50"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bet$200"
+        android:id="@+id/button200"
+        android:background="@color/button_background"
+        android:textSize="@dimen/button_textsize"
+        android:layout_alignTop="@+id/button100"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        />
+
+</RelativeLayout>
